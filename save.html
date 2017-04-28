@@ -13,19 +13,14 @@
 
 <div class="">
   <a class="link first_gap" href="pricing.html">Join beta</a>
-  <a class="link gap" href="save.html">Get bookmarklet</a>
+  <a class="link gap" href="demo.html">Get bookmarklet</a>
   <a class="last_gap btn btn-block btn-lg btn-primary" href="http://definelater.herokuapp.com">Log in</a>
 </div>
 
 <header class="site__header island">
 
-  <div class="wrap">
-   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">
-     Define Later
-   </h1></span>
-    <span class="beta subhead">Save text. Definition later. Become smarter.</span>
+  <button onclick="tapthis()" type="button" name="button">Tap this</button>
 
-  </div>
 </header><!-- /.site__header -->
 
 <main class="site__content island" role="content">
@@ -34,27 +29,11 @@
     <p class="meta"><a href="http://www.twitter.com/ytbryan">Made by @ytbryan.</a></p>
   </div>
 </main><!-- /.site__content -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-<script>
-  // function testAnim(x) {
-  //   $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-  //     $(this).removeClass();
-  //   });
-  // };
-  //
-  // $(document).ready(function(){
-  //   $('.js--triggerAnimation').click(function(e){
-  //     e.preventDefault();
-  //     var anim = $('.js--animations').val();
-  //     testAnim(anim);
-  //   });
-  //
-  //   $('.js--animations').change(function(){
-  //     var anim = $(this).val();
-  //     testAnim(anim);
-  //   });
-  // });
 
+<script>
+  function tapthis() {
+    document.location = "javascript:(function()%7Bfunction%20getSelectionText()%20%7Bvar%20text%20%3D%20%22%22%3Bif%20(window.getSelection)%20%7Btext%20%3D%20window.getSelection().toString()%3B%7D%20else%20if%20(document.selection%20%26%26%20document.selection.type%20!%3D%20%22Control%22)%20%7Btext%20%3D%20document.selection.createRange().text%3B%7Dalert(text)%3B%7DgetSelectionText()%7D)()"
+  }
 </script>
 
 
