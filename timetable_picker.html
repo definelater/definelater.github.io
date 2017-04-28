@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js" charset="utf-8"></script>
+
+<style media="screen">
+  .is_green {
+    background-color: #dff0d8;
+  }
+
+  .is_white {
+    background-color: white;
+  }
+
+  .center {
+    text-align: center;
+  }
+</style>
+
+
+<script type="text/javascript">
+
+  function something(){
+    alert("hello")
+  }
+
+  $(document).ready(function() {
+      $('td').click(function() {
+          // alert(this.id);
+          // this.class = "is_green"
+          // $(this).class = "is_green"
+          // $(".is_green", this)
+          if($(this).attr('class') == "is_white") {
+            $(this).removeClass("is_white") // = "is_white";
+            $(this).addClass("is_green") // =  "is_green" ;
+          } else if($(this).attr('class') == "is_green"){
+            $(this).removeClass("is_green") // = "is_white";
+            $(this).addClass("is_white") // =  "is_green" ;
+
+          }
+          // this.css( "background-color", "#dff0d8")
+      });
+  });
+
+
+  // $("#tableId tr").click(function() {
+  //    alert($(this).children("td").html());
+  // });
+
+  // document.getElementById("wow").addEventListener("click", something);
+
+</script>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th class="center">Mon</th>
+      <th class="center">Tue</th>
+      <th class="center">Wed</th>
+      <th class="center">Thur</th>
+      <th class="center">Fri</th>
+      <th class="center">Sat</th>
+      <th class="center">Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1 pm - 12 pm</th>
+      <td id="1,1" class="is_green"></td>
+      <td id="1,2" class="is_white"></td>
+      <td class="is_green"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">4</th>
+      <!-- <td colspan="2">Larry the Bird</td> -->
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+      <td class="is_white"></td>
+
+    </tr>
+  </tbody>
+</table>
