@@ -21,9 +21,12 @@
 
   <button onclick="tapthis()" type="button" name="button">Tap this</button>
 
-  <quote>
-    javascript:(function()%7Bfunction%20getSelectionText()%20%7Bvar%20text%20%3D%20%22%22%3Bif%20(window.getSelection)%20%7Btext%20%3D%20window.getSelection().toString()%3B%7D%20else%20if%20(document.selection%20%26%26%20document.selection.type%20!%3D%20%22Control%22)%20%7Btext%20%3D%20document.selection.createRange().text%3B%7Dalert(text)%3B%7DgetSelectionText()%7D)()
-  </quote>
+
+  <div class="">
+    <code>
+      javascript:(function()%7Bfunction%20getSelectionText()%20%7Bvar%20text%20%3D%20%22%22%3Bif%20(window.getSelection)%20%7Btext%20%3D%20window.getSelection().toString()%3B%7D%20else%20if%20(document.selection%20%26%26%20document.selection.type%20!%3D%20%22Control%22)%20%7Btext%20%3D%20document.selection.createRange().text%3B%7Dalert(text)%3B%7DgetSelectionText()%7D)()
+    </code>
+  </div>
 
 </header><!-- /.site__header -->
 
