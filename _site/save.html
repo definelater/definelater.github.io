@@ -18,18 +18,24 @@
 </div>
 
 <header class="site__header island">
-  <h5>Store words</h5>
-  <p>Each word saved, will have a definition attached.</p>
 
-  <h5>Store notes</h5>
-  <p></p>
-</header>
+  <button onclick="tapthis()" type="button" name="button">Tap this</button>
+
+
+  <div class="">
+    <code>
+      javascript:(function()%7Bfunction%20getSelectionText()%20%7Bvar%20text%20%3D%20%22%22%3Bif%20(window.getSelection)%20%7Btext%20%3D%20window.getSelection().toString()%3B%7D%20else%20if%20(document.selection%20%26%26%20document.selection.type%20!%3D%20%22Control%22)%20%7Btext%20%3D%20document.selection.createRange().text%3B%7Dalert(text)%3B%7DgetSelectionText()%7D)()
+    </code>
+  </div>
+
+</header><!-- /.site__header -->
 
 <main class="site__content island" role="content">
   <div class="wrap">
     <hr>
     <p class="meta"><a href="http://www.twitter.com//intent/tweet?text=Save your definition for later use. Get smarter everyday with definelater.com @definelater">Help share on Twitter.</a></p>
     <p class="meta"><a href="https://www.facebook.com/share.php?u=http://definelater.com">Help share on Facebook.</a></p>
+
   </div>
 </main><!-- /.site__content -->
 
